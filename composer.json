@@ -4,7 +4,9 @@
   "description": "Gutenber block for bhp page",
   "keywords": [
     "wordpress",
-    "plugin"
+    "plugin",
+    "bhpwarszawa24",
+    "gutenberg"
   ],
   "homepage": "https://github.com/SebastianWesolowski/SW_block",
   "authors": [{
