@@ -2,7 +2,7 @@
 
 Gutenber block for bhp page
 
-##info
+## info
 
 scaffold crete in wpcli:
 
@@ -12,7 +12,7 @@ wp scaffold plugin sample-plugin
 
 ## features
 
-[0.1]
+[0.2]
 
 -   init Work
 

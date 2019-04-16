@@ -1,15 +1,15 @@
 <?php
-/**
- * Plugin Name:     Sample Plugin
- * Plugin URI:      PLUGIN SITE HERE
- * Description:     PLUGIN DESCRIPTION HERE
- * Author:          YOUR NAME HERE
- * Author URI:      YOUR SITE HERE
- * Text Domain:     sample-plugin
- * Domain Path:     /languages
- * Version:         0.1.0
- *
- * @package         Sample_Plugin
- */
+/** 
+* Plugin Name:      SW_block
+* Plugin URI:       https://github.com/SebastianWesolowski/SW_block
+* Description:      Gutenber block for bhp page
+* Author:           Sebastian Wesołowski
+* Author URI:       warsztatkodu.pl
+* Text Domain:      SW_block
+* Domain Path:      /resources/lang
+* Version:          0.2
+*
+* @package         SW_block
+*/
 
 // Your code starts here.
