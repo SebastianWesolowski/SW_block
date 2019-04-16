@@ -1,0 +1,16 @@
+{
+  "name": "SebastianWesolowski/SW_block",
+  "type": "wordpress-muplugin",
+  "description": "Gutenber block for bhp page",
+  "keywords": [
+    "wordpress",
+    "plugin"
+  ],
+  "homepage": "https://github.com/SebastianWesolowski/SW_block",
+  "authors": [{
+    "name": "Sebastian Wesołowski"
+  }],
+  "require": {
+    "php": ">=5.6"
+  }
+}
