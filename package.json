@@ -1,7 +1,7 @@
 {
   "name": "sample-plugin",
   "version": "0.2.0",
-  "main": "Gruntfile.js",
+  "main": "src/block.js",
   "author": "Sebastian Wesołowski",
   "devDependencies": {
     "@wordpress/babel-preset-default": "^4.1.0",
@@ -11,5 +11,27 @@
     "parcel-bundler": "^1.12.3",
     "postcss-modules": "^1.4.1",
     "precss": "^4.0.0"
+  },
+  "source": {
+    "src/**/*.css": "dist/styles"
+  },
+  "scripts": {
+    "start": "parcel src/block.js",
+    "watch": "parcel watch src/block.js",
+    "build": "parcel build src/block.js --no-content-hash"
+  },
+  "postcss": {
+    "modules": true,
+    "plugins": [
+      "precss"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "@wordpress/default"
+    ],
+    "plugins": [
+      ["astroturf/plugin"]
+    ]
   }
 }
