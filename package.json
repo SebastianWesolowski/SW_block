@@ -12,6 +12,7 @@
     "postcss-modules": "^1.4.1",
     "precss": "^4.0.0"
   },
+
   "source": {
     "src/**/*.css": "dist/styles"
   },
