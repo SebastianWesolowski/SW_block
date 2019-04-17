@@ -3,8 +3,8 @@ sudo: false
 dist: trusty
 
 php:
+  - 7.3
   - 7.2
-  - 7.1
   - nightly
 
 notifications:
@@ -31,9 +31,6 @@ matrix:
     - php: 7.3
       env: WP_VERSION=latest
     - php: 7.2
-      env: WP_VERSION=latest
-    - php: 7.1
-      env: WP_VERSION=latest
 
 before_install:
   - phpenv config-rm xdebug.ini || true
@@ -42,7 +39,7 @@ before_install:
 install:
   - composer install -o --prefer-dist --no-interaction
 
-  # before_script:
+before_script:
   - export PATH="$HOME/.composer/vendor/bin:$PATH"
   - |
     if [ -f ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/xdebug.ini ]; then
