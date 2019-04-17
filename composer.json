@@ -1,18 +1,37 @@
 {
   "name": "SebastianWesolowski/SW_block",
   "type": "wordpress-muplugin",
+  "license": "GPLv2 or later",
   "description": "Gutenber block for bhp page",
-  "keywords": [
-    "wordpress",
-    "plugin",
-    "bhpwarszawa24",
-    "gutenberg"
-  ],
   "homepage": "https://github.com/SebastianWesolowski/SW_block",
   "authors": [{
-    "name": "Sebastian Wesołowski"
-  }],
+      "name": "Sebastian Wesołowski",
+      "email": "sebastian@wesolowski.dev",
+      "homepage": "https://wesolowski.dev"
+    },
+    {
+      "name": "Sebastian Wesołowski",
+      "email": "kontakt@warszatkodu.pl",
+      "homepage": "https://warsztatkodu.pl"
+    }
+  ],
+  "keywords": [
+    "bedrock", "composer", "roots", "wordpress", "wp", "wp-config", "plugin", "bhpwarszawa24", "gutenberg"
+  ],
+  "support": {
+    "issues": "https://github.com/SebastianWesolowski/SW_block/issues"
+  },
   "require": {
-    "php": ">=5.6"
+    "php": ">=7.1"
+  },
+  "require-dev": {
+    "wp-coding-standards/wpcs": "*",
+    "squizlabs/php_codesniffer": "^3.0.2",
+    "phpcompatibility/phpcompatibility-wp": "*"
+  },
+  "scripts": {
+    "test": [
+      "phpcs"
+    ]
   }
 }
