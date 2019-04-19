@@ -1,13 +1,16 @@
 <?php
+
 /**
  * Plugin Name:      SW_block
- * Plugin URI:       https://github.com/SebastianWesolowski/SW_block
+ * Plugin URI:       https://github.com/sebastianwesolowski/sw_block
  * Description:      Gutenber block for bhp page
+ * Version:          0.2
  * Author:           Sebastian Wesołowski
- * Author URI:       warsztatkodu.pl
+ * Author URI:       warsztatkodu.pl, wesolowski.dev
  * Text Domain:      SW_block
  * Domain Path:      /resources/lang
- * Version:          0.2
+ * License:          MIT
+ * License URI:      http://opensource.org/licenses/MIT
  *
  * @package         SW_block
  */

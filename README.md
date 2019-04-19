@@ -8,7 +8,7 @@
 **License URI:** https://www.gnu.org/licenses/gpl-2.0.html
 
 **Plugin Name:** SW_block  
-**Plugin URI:** https://github.com/SebastianWesolowski/SW_block  
+**Plugin URI:** https://github.com/sebastianwesolowski/sw_block  
 **Description:** Gutenber block for bhp page  
 **Author:** Sebastian Wesołowski  
 **Author URI:** warsztatkodu.pl  
@@ -17,7 +17,7 @@
 **Version:** 0.2  
 **@package** SW_block
 
-[![Build Status](https://travis-ci.org/SebastianWesolowski/SW_block.svg?branch=master)](https://travis-ci.org/SebastianWesolowski/SW_block)
+[![Build Status](https://travis-ci.org/sebastianwesolowski/sw_block.svg?branch=master)](https://travis-ci.org/sebastianwesolowski/sw_block)
 
 Gutenber block for bhp page
 
