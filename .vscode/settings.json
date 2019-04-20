@@ -19,6 +19,6 @@
     "**/LICENSE.md": true,
     "**/phpcs.xml": true,
     "**/yarn.lock": true,
-    "**/dist": true
+    "**/dist": false
   },
 }

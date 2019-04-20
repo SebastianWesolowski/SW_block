@@ -1,9 +1,9 @@
 {
-  "name": "sebastianwesolowski/sw_block",
+  "name": "sebastianwesolowski/sw-block",
   "type": "wordpress-muplugin",
   "license": "MIT",
   "description": "Gutenber block for bhp page",
-  "homepage": "https://github.com/sebastianwesolowski/sw_block",
+  "homepage": "https://github.com/sebastianwesolowski/sw-block",
   "authors": [{
       "name": "Sebastian Wesołowski",
       "email": "sebastian@wesolowski.dev",
@@ -19,7 +19,7 @@
     "bhpwarszawa24", "bedrock", "composer", "roots", "wordpress", "wp", "wp-config", "plugin", "gutenberg"
   ],
   "support": {
-    "issues": "https://github.com/sebastianwesolowski/sw_block/issues"
+    "issues": "https://github.com/sebastianwesolowski/sw-block/issues"
   },
   "require": {
     "php": "^7.1.3"

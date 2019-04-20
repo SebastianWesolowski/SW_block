@@ -1,18 +1,33 @@
 {
-  "name": "sample-plugin",
+  "name": "sw_block",
+  "main": "src/index.js",
   "version": "0.2.0",
-  "main": "src/block.js",
-  "author": "Sebastian Wesołowski",
-  "devDependencies": {
-    "@wordpress/babel-preset-default": "^4.1.0",
-    "@wordpress/blocks": "^6.2.3",
-    "@wordpress/element": "^2.3.0",
-    "astroturf": "^0.9.2",
-    "parcel-bundler": "^1.12.3",
-    "postcss-modules": "^1.4.1",
-    "precss": "^4.0.0"
+  "homepage": "https://github.com/sebastianwesolowski/sw_block",
+  "authors": [{
+      "name": "Sebastian Wesołowski",
+      "email": "sebastian@wesolowski.dev",
+      "homepage": "https://wesolowski.dev"
+    },
+    {
+      "name": "Sebastian Wesołowski",
+      "email": "kontakt@warszatkodu.pl",
+      "homepage": "https://warsztatkodu.pl"
+    }
+  ],
+  "keywords": [
+    "bhpwarszawa24",
+    "bedrock",
+    "composer",
+    "roots",
+    "wordpress",
+    "wp",
+    "wp-config",
+    "plugin",
+    "gutenberg"
+  ],
+  "support": {
+    "issues": "https://github.com/sebastianwesolowski/sw_block/issues"
   },
-
   "source": {
     "src/**/*.css": "dist/styles"
   },
@@ -20,6 +35,24 @@
     "start": "parcel src/block.js",
     "watch": "parcel watch src/block.js",
     "build": "parcel build src/block.js --no-content-hash"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@wordpress/babel-preset-default": "^4.0.0",
+    "@wordpress/blocks": "^6.1.0",
+    "@wordpress/element": "^2.1.9",
+    "astroturf": "^0.9.1",
+    "browser-sync": "^2.26.3",
+    "browser-sync-webpack-plugin": "2.0.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "parcel-bundler": "^1.12.0",
+    "postcss-modules": "^1.4.1",
+    "precss": "^4.0.0"
+  },
+  "dependencies": {
+    "converter": "^0.0.5",
+    "react-mde": "^7.0.4",
+    "showdown": "^1.9.0"
   },
   "postcss": {
     "modules": true,
@@ -32,7 +65,9 @@
       "@wordpress/default"
     ],
     "plugins": [
-      ["astroturf/plugin"]
+      [
+        "astroturf/plugin"
+      ]
     ]
   }
 }
