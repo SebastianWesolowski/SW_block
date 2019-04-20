@@ -2,8 +2,18 @@
   "name": "sw_block",
   "main": "src/index.js",
   "version": "0.2.0",
-  "homepage": "https://github.com/sebastianwesolowski/sw_block",
-  "authors": [{
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sebastianwesolowski/sw_block"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "authors": [
+    {
       "name": "Sebastian Wesołowski",
       "email": "sebastian@wesolowski.dev",
       "homepage": "https://wesolowski.dev"
@@ -44,14 +54,24 @@
     "astroturf": "^0.9.1",
     "browser-sync": "^2.26.3",
     "browser-sync-webpack-plugin": "2.0.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-react": "^7.12.4",
     "extract-text-webpack-plugin": "^3.0.2",
     "parcel-bundler": "^1.12.0",
     "postcss-modules": "^1.4.1",
-    "precss": "^4.0.0"
+    "precss": "^4.0.0",
+    "babel-eslint": "^10.0.1",
+    "eslint-config-wordpress": "^2.0.0",
+    "eslint-plugin-jest": "^22.4.1",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-wordpress": "^0.1.0",
+    "webpack": "^3",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "prettier": "^1.17.0"
   },
   "dependencies": {
     "converter": "^0.0.5",
-    "react-mde": "^7.0.4",
     "showdown": "^1.9.0"
   },
   "postcss": {
