@@ -16,9 +16,8 @@
   "files.eol": "\r\n",
 
   "phpcs.enable": true,
-  "phpcs.standard": "Infinum",
+  "phpcs.standard": "Infinum,WordPress-Extra",
 
-  "phpfmt.php_bin": "/Applications/MAMP/bin/php/php7.2.10/bin/php",
   "phpfmt.indent_with_space": 2,
   "phpfmt.psr2": false,
   "phpfmt.cakephp": true,

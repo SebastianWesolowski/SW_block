@@ -21,7 +21,9 @@
   "support": {
     "issues": "https://github.com/sebastianwesolowski/sw-block/issues"
   },
-	"require": {},
+	"require": {
+    "phpcompatibility/php-compatibility": "^9.1"
+  },
 	"autoload": {
 		"psr-4": {
 			"Inc\\": "./inc"
@@ -29,15 +31,18 @@
 	},
 	"require-dev": {
     "dealerdirect/phpcodesniffer-composer-installer": "^0.4.3",
-    "infinum/coding-standards-wp": "^0.2.8"
+    "infinum/coding-standards-wp": "^0.2.8",
+    "phpcompatibility/phpcompatibility-wp": "^2.0"
   },
 	"scripts": {
 		"post-install-cmd": [
-			"\"vendor/bin/phpcs\" --config-set installed_paths vendor/infinum/coding-standards-wp"
+      "\"vendor/bin/phpcs\" --config-set installed_paths vendor/infinum/coding-standards-wp,vendor/phpcompatibility/php-compatibility",
+      "\"vendor/bin/phpcs\" -i"
 		],
 		"post-update-cmd": [
-			"\"vendor/bin/phpcs\" --config-set installed_paths vendor/infinum/coding-standards-wp"
-		]
+      "\"vendor/bin/phpcs\" --config-set installed_paths vendor/infinum/coding-standards-wp,vendor/phpcompatibility/php-compatibility",
+      "\"vendor/bin/phpcs\" -i"
+    ]
 	},
 	"config": {
 		"sort-packages": true,

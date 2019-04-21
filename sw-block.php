@@ -49,4 +49,4 @@ if ( class_exists( 'Inc\\Init' ) ) {
   Inc\Init::register();
 }
 
-wp_register_script( 'demo-block-js', plugin_dir_url( __FILE__ ) . 'dist/block.js', ['wp-element', 'wp-i18n', 'wp-blocks'], '', null, true );
+wp_register_script( 'demo-block-js', plugin_dir_url( __FILE__ ) . 'dist/block.js', ['wp-element', 'wp-i18n', 'wp-blocks '], '', null, true );
