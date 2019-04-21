@@ -21,12 +21,16 @@ matrix:
   include:
     - php: 7.3
       env: WP_VERSION=latest
+      env: WP_TRAVISCI
     - php: 7.2
       env: WP_VERSION=latest
+      env: WP_TRAVISCI
     - php: 7.1
       env: WP_VERSION=latest
+      env: WP_TRAVISCI
     - php: nightly
       env: WP_VERSION=latest
+      env: WP_TRAVISCI
 
 before_script:
   - export PATH="$HOME/.composer/vendor/bin:$PATH"
@@ -48,11 +52,6 @@ before_script:
     fi
 
 script:
-  - |
-    if [[ ! -z "$WP_VERSION" ]] ; then
-      phpunit
-      WP_MULTISITE=1 phpunit
-    fi
   - |
     if [[ "$WP_TRAVISCI" == "phpcs" ]] ; then
       phpcs
