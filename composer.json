@@ -28,9 +28,9 @@
 		}
 	},
 	"require-dev": {
-		"dealerdirect/phpcodesniffer-composer-installer": "*",
-		"infinum/coding-standards-wp": "^0.2.8"
-	},
+    "dealerdirect/phpcodesniffer-composer-installer": "^0.4.3",
+    "infinum/coding-standards-wp": "^0.2.8"
+  },
 	"scripts": {
 		"post-install-cmd": [
 			"\"vendor/bin/phpcs\" --config-set installed_paths vendor/infinum/coding-standards-wp"

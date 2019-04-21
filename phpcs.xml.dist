@@ -60,10 +60,13 @@
 	For more information, also see:
 	https://github.com/PHPCompatibility/PHPCompatibility
 	-->
-	<!--
-	<config name="testVersion" value="5.2-"/>
-	<rule ref="PHPCompatibilityWP"/>
-	-->
+	
+	<!-- <config name="testVersion" value="7.1-"/>
+	<rule ref="vendor/phpcompatibility/php-compatibility/PHPCompatibility"/>
+	<rule ref="vendor/phpcompatibility/phpcompatibility-wp/PHPCompatibilityWP"/>
+	<rule ref="vendor/phpcompatibility/phpcompatibility-paragonie/PHPCompatibilityParagonieRandomCompat"/>
+	<rule ref="vendor/phpcompatibility/phpcompatibility-paragonie/PHPCompatibilityParagonieSodiumCompat"/> -->
+	
 
 	<!--
 	To get the optimal benefits of using WPCS, we should add a couple of
