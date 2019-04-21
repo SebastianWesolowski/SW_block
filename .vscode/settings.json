@@ -1,24 +1,30 @@
 {
   "editor.formatOnSaveTimeout": 750,
   "editor.formatOnSave": true,
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  
   "[javascript]":{
     "editor.formatOnSave": false
   },
 
-  "editor.insertSpaces": true,
+  "[php]": {
+    "editor.formatOnSave": true
+  },
 
-  "files.eol": "\n",
-  "editor.tabSize": 2,
+  
+  "files.eol": "\r\n",
 
   "phpcs.enable": true,
   "phpcs.standard": "Infinum",
+
+  "phpfmt.php_bin": "/Applications/MAMP/bin/php/php7.2.10/bin/php",
   "phpfmt.indent_with_space": 2,
   "phpfmt.psr2": false,
   "phpfmt.cakephp": true,
   "phpfmt.passes": [
       "DoubleToSingleQuote",
       "GeneratePHPDoc",
-      "NewLineBeforeReturn",
       "SpaceAroundParentheses",
       "SpaceBetweenMethods",
       "SpaceAfterExclamationMark",
