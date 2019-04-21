@@ -5,9 +5,7 @@ module.exports = {
 		"wordpress",
 		"plugin:react/recommended",
 		"plugin:jsx-a11y/recommended",
-    "plugin:jest/recommended",
-    "prettier",
-		"@infinumjs"
+		"plugin:jest/recommended"
 	],
 	"env": {
 		"browser": false,
@@ -28,25 +26,11 @@ module.exports = {
 		"window": true,
 		"document": true
 	},
-	"plugins": ["react", "jsx-a11y", "jest",  "prettier"],
+	"plugins": ["react", "jsx-a11y", "jest"],
 	"settings": {
-    "import/core-modules": [
-      "@wordpress/components",
-      "@wordpress/blocks",
-      "@wordpress/element",
-      "@wordpress/editor",
-      "@wordpress/date",
-      "@wordpress/data",
-      "@wordpress/i18n",
-      "react",
-      "react-dom",
-      "ga",
-      "gtag",
-      "jquery"
-     ],
 		"react": {
-			"pragma": "wp",
-			"version": "detect"
+      "pragma": "wp",
+      "version": "detect",
 		}
 	},
 	"rules": {
@@ -205,5 +189,5 @@ module.exports = {
 		"valid-jsdoc": ["error", { "requireReturn": false }],
 		"valid-typeof": "error",
 		"yoda": "off"
-	}
+  }
 }

@@ -1,24 +1,64 @@
 {
   "editor.formatOnSaveTimeout": 750,
-  "editor.insertSpaces": true,
   "editor.formatOnSave": true,
+  "[javascript]":{
+    "editor.formatOnSave": false
+  },
+
+  "editor.insertSpaces": true,
+
+  "files.eol": "\n",
+  "editor.tabSize": 2,
+
+  "phpcs.enable": true,
+  "phpcs.standard": "Infinum",
+  "phpfmt.indent_with_space": 2,
+  "phpfmt.psr2": false,
+  "phpfmt.cakephp": true,
+  "phpfmt.passes": [
+      "DoubleToSingleQuote",
+      "GeneratePHPDoc",
+      "NewLineBeforeReturn",
+      "SpaceAroundParentheses",
+      "SpaceBetweenMethods",
+      "SpaceAfterExclamationMark",
+      "AddMissingParentheses",
+      "AlignDoubleSlashComments",
+      "AlignEquals",
+      "AlignGroupDoubleArrow",
+      "AutoSemicolon",
+      "MergeNamespaceWithOpenTag",
+      "NewLineBeforeReturn",
+      "ReplaceBooleanAndOr",
+      "SortUseNameSpace",
+    ],
+
+  "css.validate": false,
+
+  "stylelint.enable": true,
+
   "prettier.stylelintIntegration": true,
-  "prettier.eslintIntegration": true,
   "prettier.singleQuote": true,
   "prettier.printWidth": 80,
   "prettier.trailingComma": "all",
   "prettier.requireConfig": true,
   "prettier.tabWidth": 2,
+  "prettier.eslintIntegration": true,
+
+  "eslint.enable": true,
+  "eslint.autoFixOnSave" : true,
+  "eslint.alwaysShowStatus" : true,
 
   "files.exclude": {
     "**/.git": true,
     "**/.cache-loader": true,
     "**/node_modules": true,
-    "**/vendor": true,
+    "**/vendor": false,
     "**/composer.lock": true,
     "**/LICENSE.md": true,
     "**/phpcs.xml": true,
     "**/yarn.lock": true,
     "**/dist": false
   },
+
 }
