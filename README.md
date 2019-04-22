@@ -1,23 +1,23 @@
 # sw-block
 
-**Contributors:** (this should be a list of wordpress.org userid's)  
-**Tags:** bhpwarszawa24, gutenberg, wordpress  
-**Tested up to:** 5.1.1  
-**Stable tag:** 0.1.0  
-**License:** MIT  
+**Contributors:** (this should be a list of wordpress.org userid's)
+**Tags:** bhpwarszawa24, gutenberg, wordpress
+**Tested up to:** 5.1.1
+**Stable tag:** 0.1.0
+**License:** MIT
 **License URI:** https://www.gnu.org/licenses/gpl-2.0.html
 
-**Plugin Name:** sw-block  
-**Plugin URI:** https://github.com/sebastianwesolowski/sw-block  
-**Description:** Gutenber block for bhp page  
-**Author:** Sebastian Wesołowski  
-**Author URI:** warsztatkodu.pl  
-**Text Domain:** sw-block  
-**Domain Path:** /resources/lang  
-**Version:** 0.2  
+**Plugin Name:** sw-block
+**Plugin URI:** https://github.com/sebastianwesolowski/sw-block
+**Description:** Gutenber block for bhp page
+**Author:** Sebastian Wesołowski
+**Author URI:** warsztatkodu.pl
+**Text Domain:** sw-block
+**Domain Path:** /resources/lang
+**Version:** 0.2
 **@package** sw-block
 
-[![Build Status](https://travis-ci.org/sebastianwesolowski/sw-block.svg?branch=master)](https://travis-ci.org/sebastianwesolowski/sw-block)
+[![Build Status](https://travis-ci.org/SebastianWesolowski/SW_block.svg?branch=master)](https://travis-ci.org/sebastianwesolowski/SW_block)
 
 Gutenber block for bhp page
 
