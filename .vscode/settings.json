@@ -3,7 +3,7 @@
   "editor.formatOnSave": true,
   "editor.insertSpaces": true,
   "editor.tabSize": 2,
-  
+
   "[javascript]":{
     "editor.formatOnSave": false
   },
@@ -12,13 +12,12 @@
     "editor.formatOnSave": true
   },
 
-  
+
   "files.eol": "\r\n",
 
   "phpcs.enable": true,
   "phpcs.standard": "Infinum,WordPress-Extra",
-
-  "phpfmt.indent_with_space": 2,
+  "phpfmt.indent_with_space": 0,
   "phpfmt.psr2": false,
   "phpfmt.cakephp": true,
   "phpfmt.passes": [
@@ -31,14 +30,25 @@
     "AlignDoubleSlashComments",
     "AlignEquals",
     "ShortArray",
-    "StripExtraCommaInArray",
     "AlignGroupDoubleArrow",
     "AutoSemicolon",
     "MergeNamespaceWithOpenTag",
     "NewLineBeforeReturn",
     "ReplaceBooleanAndOr",
     "SortUseNameSpace",
-    ],
+    "TrimSpaceBeforeSemicolon",
+
+    "PSR2KeywordsLowerCase",
+    "PSR2LnAfterNamespace",
+    "PSR2ModifierVisibilityStaticOrder",
+    "PSR2SingleEmptyLineAndStripClosingTag",
+    "ReindentSwitchBlocks",
+  ],
+  "phpfmt.exclude": [
+    "ReindentComments",
+    "StripNewlineWithinClassBody"
+  ],
+
 
   "css.validate": false,
 
