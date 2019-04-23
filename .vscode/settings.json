@@ -21,6 +21,12 @@
   "phpfmt.psr2": false,
   "phpfmt.cakephp": true,
   "phpfmt.passes": [
+    "SpaceAroundControlStructures",
+    "IndentTernaryConditions",
+    "DocBlockToComment",
+    "GeneratePHPDoc",
+    "PHPDocTypesToFunctionTypehint",
+    "PrettyPrintDocBlocks",
     "DoubleToSingleQuote",
     "GeneratePHPDoc",
     "SpaceAroundParentheses",
@@ -37,7 +43,6 @@
     "ReplaceBooleanAndOr",
     "SortUseNameSpace",
     "TrimSpaceBeforeSemicolon",
-
     "PSR2KeywordsLowerCase",
     "PSR2LnAfterNamespace",
     "PSR2ModifierVisibilityStaticOrder",

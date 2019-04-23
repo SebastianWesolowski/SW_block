@@ -1,4 +1,4 @@
 const pluginConsts = {};
-pluginConsts.pluginName = 'sebastian-';
+pluginConsts.pluginName = 'wp-gutenberg-boilerplate';
 
 export default pluginConsts;

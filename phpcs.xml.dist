@@ -50,6 +50,7 @@
 		<exclude name="WordPress.Arrays.ArrayDeclarationSpacing.NoSpaceAfterArrayOpener"/>
 		<exclude name="WordPress.Arrays.ArrayDeclarationSpacing.NoSpaceBeforeArrayCloser"/>
 		<exclude name="PEAR.Functions.FunctionCallSignature.Indent"/>
+		<exclude name="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis"/>
 
 	</rule>
 
