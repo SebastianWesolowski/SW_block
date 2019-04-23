@@ -4,12 +4,23 @@
   "editor.insertSpaces": true,
   "editor.tabSize": 2,
 
-  "[javascript]":{
-    "editor.formatOnSave": false
+  "editor.acceptSuggestionOnEnter": "off",
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorStyle": "block",
+  "editor.detectIndentation": true,
+  "editor.formatOnPaste": true,
+  "editor.fontLigatures": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+
+  "[javascript]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
 
   "[php]": {
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "kokororin.vscode-phpfmt",
   },
 
 
@@ -37,7 +48,6 @@
     "ReplaceBooleanAndOr",
     "SortUseNameSpace",
     "TrimSpaceBeforeSemicolon",
-
     "PSR2KeywordsLowerCase",
     "PSR2LnAfterNamespace",
     "PSR2ModifierVisibilityStaticOrder",
@@ -62,9 +72,15 @@
   "prettier.tabWidth": 2,
   "prettier.eslintIntegration": true,
 
+  // "prettier.bracketSpacing": false,
+  // "prettier.jsxBracketSameLine": true,
+  // "prettier.arrowParens": "avoid",
+  // "prettier.jsxSingleQuote": true,
+  // "prettier.semi": false,
+
   "eslint.enable": true,
-  "eslint.autoFixOnSave" : true,
-  "eslint.alwaysShowStatus" : true,
+  "eslint.autoFixOnSave": true,
+  "eslint.alwaysShowStatus": true,
 
   "files.exclude": {
     "**/.git": true,
