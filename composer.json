@@ -24,25 +24,17 @@
 	"require": {
     "phpcompatibility/php-compatibility": "^9.1"
   },
-	"autoload": {
-		"psr-4": {
-			"Inc\\": "./inc"
-		}
-	},
 	"require-dev": {
-    "dealerdirect/phpcodesniffer-composer-installer": "^0.4.3",
-    "infinum/coding-standards-wp": "^0.2.8",
-    "phpcompatibility/phpcompatibility-wp": "^2.0"
-  },
+		"dealerdirect/phpcodesniffer-composer-installer": "*",
+		"infinum/coding-standards-wp": "^0.2.8"
+	},
 	"scripts": {
 		"post-install-cmd": [
-      "\"vendor/bin/phpcs\" --config-set installed_paths vendor/infinum/coding-standards-wp,vendor/phpcompatibility/php-compatibility",
-      "\"vendor/bin/phpcs\" -i"
+			"\"vendor/bin/phpcs\" --config-set installed_paths vendor/infinum/coding-standards-wp"
 		],
 		"post-update-cmd": [
-      "\"vendor/bin/phpcs\" --config-set installed_paths vendor/infinum/coding-standards-wp,vendor/phpcompatibility/php-compatibility",
-      "\"vendor/bin/phpcs\" -i"
-    ]
+			"\"vendor/bin/phpcs\" --config-set installed_paths vendor/infinum/coding-standards-wp"
+		]
 	},
 	"config": {
 		"sort-packages": true,
