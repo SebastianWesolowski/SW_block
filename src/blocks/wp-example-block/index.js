@@ -7,7 +7,6 @@
 import { registerBlockType } from '@wordpress/blocks';
 import { __ } from '@wordpress/i18n';
 import icons from './icons';
-import pluginConsts from '../../plugin-consts';
 import './style.scss';
 import './editor.scss';
 
@@ -15,9 +14,8 @@ import './editor.scss';
  * Register block
  */
 export default registerBlockType(
-	`${ pluginConsts.pluginName }/wp-example-block`,
 	{
-		title: __( 'Example Dynamic Block', 'wp-boilerplate' ),
+		title: __( 'Example Dynamic Block SW 111', 'wp-boilerplate' ),
 		description: __( 'Description for the side panel', 'wp-boilerplate' ),
 		category: 'common',
 		icon: {
