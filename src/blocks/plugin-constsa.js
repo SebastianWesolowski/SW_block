@@ -1,4 +1,4 @@
 const pluginConsts = {};
-pluginConsts.pluginName = 'sebastiassn-';
+pluginConsts.pluginName = 'autoauto-plugin-';
 
 export default pluginConsts;
