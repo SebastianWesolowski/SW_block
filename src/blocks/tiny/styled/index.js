@@ -1,10 +1,14 @@
-import styled, { css } from 'astroturf'
-import ReactMde from 'react-mde'
-import 'react-mde/lib/styles/css/react-mde-all'
+import styled, { css } from 'astroturf';
+import ReactMde from 'react-mde';
 
-import './common.scss';
+// import { registerBlockType } from '@wordpress/blocks';
+// import { __ } from '@wordpress/i18n';
+// import icons from './icons';
 
-export const StyledReactMde = styled(ReactMde)`
+import './style.scss';
+import './editor.scss';
+
+export const StyledReactMde = styled( ReactMde )`
   background: rgba(0, 0, 0, 0.05);
 
   :global(.mde-header button svg) {
@@ -24,10 +28,10 @@ export const StyledReactMde = styled(ReactMde)`
   :global(.mde-header .mde-tabs) {
     display: none;
   }
-`
+`;
 
 export const visibility = css`
   .hidden {
     display: none;
   }
-`
+`;

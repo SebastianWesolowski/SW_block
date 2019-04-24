@@ -6,7 +6,15 @@
   "scripts": {
     "start": "parcel src/block.js  --no-source-maps --no-hmr --no-cache",
     "watch": "parcel watch src/block.js --no-source-maps --hmr-hostname fleek.test --no-cache",
-    "build": "parcel build src/block.js --no-content-hash"
+    "build": "parcel build src/block.js --no-content-hash",
+    "__eslintPlugin": "eslint src/*",
+    "__stylelintPlugin": "stylelint \"src/**/**/*.scss\" --syntax scss",
+    "precommitCss": "npm run __stylelintPlugin",
+    "precommitJs": "npm run __eslintPlugin",
+    "precommit": "npm run precommitJs && npm run precommitCss",
+    "precommitPhp": "phpcs --standard=vendor/infinum/coding-standards-wp/Infinum inc",
+    "autofixPhp": "phpcbf --standard=vendor/infinum/coding-standards-wp/Infinum inc",
+    "build-node": "node scripts/build.js"
   },
   "keywords": [
     "wordpress",
@@ -26,7 +34,18 @@
     "postcss-modules": "^1.4.1",
     "precss": "^4.0.0",
     "sass": "^1.19.0",
-    "webpack": "^3.1.0"
+    "webpack": "^3",
+    "babel-eslint": "^8.2.1",
+    "@infinumjs/eslint-config": "^1.1.0",
+    "@infinumjs/stylelint-config": "^1.0.0",
+    "eslint": "^4.15.0",
+    "eslint-config-wordpress": "^2.0.0",
+    "eslint-plugin-import": "^2.10.0",
+    "eslint-plugin-jest": "^21.6.1",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.5.1",
+    "eslint-plugin-wordpress": "^0.1.0",
+    "stylelint": "^9.2.0"
   },
   "dependencies": {
     "converter": "^0.0.5",
@@ -34,8 +53,7 @@
     "draft-js": "^0.10.5",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
-    "react-mde": "^7.0.4",
-    "showdown": "^1.9.0"
+    "react-mde": "^7.0.4"
   },
   "postcss": {
     "modules": true,

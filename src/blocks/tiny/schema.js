@@ -4,13 +4,12 @@ import Edit from './edit';
 import { save } from './save';
 import { MarkdownIcon } from './icons';
 
-import pluginConsts from '../../plugin-consts';
+import pluginConsts from './plugin-consts';
 
 export const name = 'tinyblocks/markdown';
 
 export const settings = {
-	// title: __( `${ pluginConsts.pluginName }` + 'wp-example-block', 'tiny-pixel' ),
-	title: __( 'sebixwp-example-block', 'tiny-pixel' ),
+	title: __( `${ pluginConsts.pluginName }` + 'wp-example-block', 'tiny-pixel' ),
 	description: __( 'Express yourself', 'tiny-pixel' ),
 	category: 'common',
 	keywords: [
@@ -19,7 +18,7 @@ export const settings = {
 		__( 'code', 'tiny-pixel' ),
 	],
 	icon: {
-		background: '#000',
+		background: '#123123',
 		color: '#fff',
 		src: <MarkdownIcon width={ 48 } height={ 48 } />,
 	},

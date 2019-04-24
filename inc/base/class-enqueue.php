@@ -4,9 +4,8 @@
  *
  * Text Domain: wp-boilerplate
  *
- * @package  WP_Gutenberg_Boilerplate\Inc\Base
- *
  * @since   1.0.0
+ * @package  WP_Gutenberg_Boilerplate\Inc\Base
  */
 
 namespace Inc\Base;
@@ -30,11 +29,11 @@ class Enqueue {
 	public function register() {
 
 		// Enqueue block editor only JavaScript and CSS.
-		add_action( 'enqueue_block_editor_assets', [$this, 'enqueue_block_editor_assets'] );
+		add_action( 'enqueue_block_editor_assets', [ $this, 'enqueue_block_editor_assets' ] );
 		// Enqueue front end and editor JavaScript and CSS assets.
-		add_action( 'enqueue_block_assets', [$this, 'enqueue_assets'] );
+		add_action( 'enqueue_block_assets', [ $this, 'enqueue_assets' ] );
 		// Enqueue frontend JavaScript and CSS assets.
-		add_action( 'enqueue_block_assets', [$this, 'enqueue_frontend_assets'] );
+		add_action( 'enqueue_block_assets', [ $this, 'enqueue_frontend_assets' ] );
 
 	}
 
@@ -96,7 +95,7 @@ class Enqueue {
 	 */
 	public function enqueue_frontend_assets() {
 
-// If in the backend, bail out.
+		// If in the backend, bail out.
 		if ( is_admin() ) {
 			return;
 		}
