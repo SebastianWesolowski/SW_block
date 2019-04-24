@@ -3,7 +3,7 @@
 **Contributors:** (this should be a list of wordpress.org userid's)
 **Tags:** bhpwarszawa24, gutenberg, wordpress
 **Tested up to:** 5.1.1
-**Stable tag:** 0.1.0
+**Stable tag:** 1.1.0
 **License:** MIT
 **License URI:** https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,7 +14,7 @@
 **Author URI:** warsztatkodu.pl
 **Text Domain:** sw-block
 **Domain Path:** /resources/lang
-**Version:** 0.2
+**Version:** 1.1.0
 **@package** sw-block
 
 [![Build Status](https://travis-ci.org/SebastianWesolowski/SW_block.svg?branch=master)](https://travis-ci.org/sebastianwesolowski/SW_block)
@@ -53,6 +53,9 @@ e.g.
 
 ## Changelog
 
-### 0.1
+### 1.1.0: 24-04-2019
+-   add astroturf
 
-- init commit
+### 1.0.0: 16-04-2019
+
+-   init
