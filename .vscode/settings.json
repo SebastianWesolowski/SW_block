@@ -6,7 +6,6 @@
 
   "editor.acceptSuggestionOnEnter": "off",
   "editor.cursorBlinking": "smooth",
-  "editor.cursorStyle": "block",
   "editor.detectIndentation": true,
   "editor.formatOnPaste": true,
   "editor.fontLigatures": true,
