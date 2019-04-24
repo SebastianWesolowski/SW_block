@@ -3,6 +3,29 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "X-Generator: babel-plugin-makepot\n"
 
+<<<<<<< HEAD
+=======
+#: src/blocks/tiny/schema.js:13
+msgid "sebixwp-example-block"
+msgstr ""
+
+#: src/blocks/tiny/schema.js:14
+msgid "Express yourself"
+msgstr ""
+
+#: src/blocks/tiny/schema.js:17
+msgid "markdown"
+msgstr ""
+
+#: src/blocks/tiny/schema.js:18
+msgid "Tiny Pixel"
+msgstr ""
+
+#: src/blocks/tiny/schema.js:19
+msgid "code"
+msgstr ""
+
+>>>>>>> new
 #: src/blocks/wp-example-block/index.js:20
 msgid "Example Dynamic Block"
 msgstr ""

@@ -1,6 +1,6 @@
 {
-  "name": "sw_block",
   "main": "src/index.js",
+<<<<<<< HEAD
   "version": "0.2.0",
   "repository": {
     "type": "git",
@@ -40,20 +40,40 @@
   },
   "scripts": {
     "__eslintPlugin": "eslint src/",
+=======
+  "source": {
+    "src/**/*.css": "dist/styles"
+  },
+  "scripts": {
+    "start": "parcel src/block.js  --no-source-maps --no-hmr --no-cache",
+    "watch": "parcel watch src/block.js --no-source-maps --hmr-hostname fleek.test --no-cache",
+    "build": "parcel build src/block.js --no-content-hash",
+    "__eslintPlugin": "eslint src/*",
+>>>>>>> new
     "__stylelintPlugin": "stylelint \"src/**/**/*.scss\" --syntax scss",
     "precommitCss": "npm run __stylelintPlugin",
     "precommitJs": "npm run __eslintPlugin",
     "precommit": "npm run precommitJs && npm run precommitCss",
     "precommitPhp": "phpcs --standard=vendor/infinum/coding-standards-wp/Infinum inc",
     "autofixPhp": "phpcbf --standard=vendor/infinum/coding-standards-wp/Infinum inc",
+<<<<<<< HEAD
     "start": "node scripts/start.js",
     "build": "node scripts/build.js"
   },
   "dependencies": {
     "classnames": "^2.2.6",
     "filesize": "^3.5.11"
+=======
+    "build-node": "node scripts/build.js"
+>>>>>>> new
   },
+  "keywords": [
+    "wordpress",
+    "plugin",
+    "javascript"
+  ],
   "devDependencies": {
+<<<<<<< HEAD
     "@infinumjs/eslint-config": "^1.1.0",
     "@infinumjs/stylelint-config": "^1.0.0",
     "@wordpress/babel-plugin-makepot": "^2.0.3",
@@ -73,6 +93,24 @@
     "cross-spawn": "^5.1.0",
     "css-loader": "^1.0.0",
     "cssnano": "^4.1.0",
+=======
+    "@babel/core": "^7.0.0",
+    "@wordpress/babel-preset-default": "^4.0.0",
+    "@wordpress/blocks": "^6.1.0",
+    "@wordpress/element": "^2.1.9",
+    "astroturf": "^0.9.1",
+    "browser-sync": "^2.26.3",
+    "browser-sync-webpack-plugin": "2.0.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "parcel-bundler": "^1.12.0",
+    "postcss-modules": "^1.4.1",
+    "precss": "^4.0.0",
+    "sass": "^1.19.0",
+    "webpack": "^3",
+    "babel-eslint": "^8.2.1",
+    "@infinumjs/eslint-config": "^1.1.0",
+    "@infinumjs/stylelint-config": "^1.0.0",
+>>>>>>> new
     "eslint": "^4.15.0",
     "eslint-config-wordpress": "^2.0.0",
     "eslint-plugin-import": "^2.10.0",
@@ -80,6 +118,7 @@
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.5.1",
     "eslint-plugin-wordpress": "^0.1.0",
+<<<<<<< HEAD
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "gzip-size": "^4.1.0",
     "inquirer": "^5.0.0",
@@ -94,5 +133,32 @@
     "update-notifier": "^2.3.0",
     "webpack": "^4.5.0",
     "webpack-cli": "^2.0.14"
+=======
+    "stylelint": "^9.2.0"
+  },
+  "dependencies": {
+    "converter": "^0.0.5",
+    "core-js": "^2.6.5",
+    "draft-js": "^0.10.5",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-mde": "^7.0.4"
+  },
+  "postcss": {
+    "modules": true,
+    "plugins": [
+      "precss"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "@wordpress/default"
+    ],
+    "plugins": [
+      [
+        "astroturf/plugin"
+      ]
+    ]
+>>>>>>> new
   }
 }
