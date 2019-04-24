@@ -3,7 +3,6 @@
   "editor.formatOnSave": true,
   "editor.insertSpaces": true,
   "editor.tabSize": 2,
-
   "editor.acceptSuggestionOnEnter": "off",
   "editor.cursorBlinking": "smooth",
   "editor.detectIndentation": true,
@@ -11,22 +10,17 @@
   "editor.fontLigatures": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
-
   "[javascript]": {
     "editor.formatOnSave": false,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-
   "[php]": {
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "kokororin.vscode-phpfmt",
+    "editor.defaultFormatter": "kokororin.vscode-phpfmt"
   },
-
-
   "files.eol": "\r\n",
-
   "phpcs.enable": true,
-  "phpcs.standard": "Infinum,WordPress-Extra",
+  "phpcs.standard": "Infinum",
   "phpfmt.indent_with_space": 0,
   "phpfmt.psr2": false,
   "phpfmt.cakephp": true,
@@ -57,18 +51,14 @@
     "PSR2LnAfterNamespace",
     "PSR2ModifierVisibilityStaticOrder",
     "PSR2SingleEmptyLineAndStripClosingTag",
-    "ReindentSwitchBlocks",
+    "ReindentSwitchBlocks"
   ],
   "phpfmt.exclude": [
     "ReindentComments",
     "StripNewlineWithinClassBody"
   ],
-
-
   "css.validate": false,
-
   "stylelint.enable": true,
-
   "prettier.stylelintIntegration": true,
   "prettier.singleQuote": true,
   "prettier.printWidth": 80,
@@ -76,27 +66,40 @@
   "prettier.requireConfig": true,
   "prettier.tabWidth": 2,
   "prettier.eslintIntegration": true,
-
   // "prettier.bracketSpacing": false,
   // "prettier.jsxBracketSameLine": true,
   // "prettier.arrowParens": "avoid",
   // "prettier.jsxSingleQuote": true,
   // "prettier.semi": false,
-
   "eslint.enable": true,
   "eslint.autoFixOnSave": true,
   "eslint.alwaysShowStatus": true,
-
   "files.exclude": {
     "**/.git": true,
     "**/.cache-loader": true,
     "**/node_modules": true,
-    "**/vendor": false,
+    "**/vendor": true,
     "**/composer.lock": true,
     "**/LICENSE.md": true,
     "**/phpcs.xml": true,
     "**/yarn.lock": true,
-    "**/dist": false
-  },
-
+    "**/.env.example": true,
+    "**/.travis.yml": true,
+    "**/bitbucket-pipelines.yml": true,
+    "**/CHANGELOG.md": true,
+    "**/dependencies.yml": true,
+    "**/wp-cli.yml": true,
+    "**/README.md": true,
+    "**/.npmrc": true,
+    "**/dist": true,
+    "**/.gitattributes": true,
+    "**/postcss.config.js": true,
+    "**/.stylelintrc": true,
+    "**/.prettierrc": true,
+    "**/.eslintrc.js": true,
+    "**/.eslintignore": true,
+    "**/.editorconfig": true,
+    "**/.distignore": true,
+    "**/.babelrc": true,
+  }
 }

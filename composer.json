@@ -1,6 +1,6 @@
 {
   "name": "sebastianwesolowski/sw-block",
-  "type": "wordpress-muplugin",
+  "type": "wordpress-plugin",
   "license": "MIT License",
   "description": "Gutenber block for bhp page",
   "homepage": "https://github.com/sebastianwesolowski/sw-block",
@@ -21,20 +21,22 @@
   "support": {
     "issues": "https://github.com/sebastianwesolowski/sw-block/issues"
   },
-	"require": {
+	"require-dev": {
+    "squizlabs/php_codesniffer": "^3.0.2",
+    "dealerdirect/phpcodesniffer-composer-installer": "^0.4.3",
+    "infinum/coding-standards-wp": "^0.2.8",
+    "phpcompatibility/phpcompatibility-wp": "^2.0",
     "phpcompatibility/php-compatibility": "^9.1"
   },
-	"require-dev": {
-		"dealerdirect/phpcodesniffer-composer-installer": "*",
-		"infinum/coding-standards-wp": "^0.2.8"
-	},
 	"scripts": {
 		"post-install-cmd": [
-			"\"vendor/bin/phpcs\" --config-set installed_paths vendor/infinum/coding-standards-wp"
+      "\"vendor/bin/phpcs\" --config-set installed_paths vendor/infinum/coding-standards-wp",
+      "\"vendor/bin/phpcs\" -i"
 		],
 		"post-update-cmd": [
-			"\"vendor/bin/phpcs\" --config-set installed_paths vendor/infinum/coding-standards-wp"
-		]
+      "\"vendor/bin/phpcs\" --config-set installed_paths vendor/infinum/coding-standards-wp",
+      "\"vendor/bin/phpcs\" -i"
+    ]
 	},
 	"config": {
 		"sort-packages": true,

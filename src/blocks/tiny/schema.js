@@ -4,7 +4,7 @@ import Edit from './edit';
 import { save } from './save';
 import { MarkdownIcon } from './icons';
 
-import pluginConsts from './plugin-consts';
+import pluginConsts from '../../plugin-consts';
 
 export const name = 'tinyblocks/markdown';
 

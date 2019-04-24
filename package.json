@@ -1,46 +1,5 @@
 {
   "main": "src/index.js",
-<<<<<<< HEAD
-  "version": "0.2.0",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/sebastianwesolowski/sw_block"
-  },
-  "licenses": [
-    {
-      "type": "MIT License",
-      "url": "http://opensource.org/licenses/MIT"
-    }
-  ],
-  "authors": [
-    {
-      "name": "Sebastian Wesołowski",
-      "email": "sebastian@wesolowski.dev",
-      "homepage": "https://wesolowski.dev"
-    },
-    {
-      "name": "Sebastian Wesołowski",
-      "email": "kontakt@warszatkodu.pl",
-      "homepage": "https://warsztatkodu.pl"
-    }
-  ],
-  "keywords": [
-    "bhpwarszawa24",
-    "bedrock",
-    "composer",
-    "roots",
-    "wordpress",
-    "wp",
-    "wp-config",
-    "plugin",
-    "gutenberg"
-  ],
-  "support": {
-    "issues": "https://github.com/sebastianwesolowski/sw_block/issues"
-  },
-  "scripts": {
-    "__eslintPlugin": "eslint src/",
-=======
   "source": {
     "src/**/*.css": "dist/styles"
   },
@@ -49,23 +8,12 @@
     "watch": "parcel watch src/block.js --no-source-maps --hmr-hostname fleek.test --no-cache",
     "build": "parcel build src/block.js --no-content-hash",
     "__eslintPlugin": "eslint src/*",
->>>>>>> new
     "__stylelintPlugin": "stylelint \"src/**/**/*.scss\" --syntax scss",
     "precommitCss": "npm run __stylelintPlugin",
     "precommitJs": "npm run __eslintPlugin",
     "precommit": "npm run precommitJs && npm run precommitCss",
-    "precommitPhp": "phpcs --standard=vendor/infinum/coding-standards-wp/Infinum inc",
-    "autofixPhp": "phpcbf --standard=vendor/infinum/coding-standards-wp/Infinum inc",
-<<<<<<< HEAD
-    "start": "node scripts/start.js",
-    "build": "node scripts/build.js"
-  },
-  "dependencies": {
-    "classnames": "^2.2.6",
-    "filesize": "^3.5.11"
-=======
-    "build-node": "node scripts/build.js"
->>>>>>> new
+    "precommitPhp": "vendor/bin/phpcs --standard=vendor/infinum/coding-standards-wp/Infinum sw-block.php",
+    "autofixPhp": "vendor/bin/phpcbf --standard=vendor/infinum/coding-standards-wp/Infinum sw-block.php"
   },
   "keywords": [
     "wordpress",
@@ -73,27 +21,6 @@
     "javascript"
   ],
   "devDependencies": {
-<<<<<<< HEAD
-    "@infinumjs/eslint-config": "^1.1.0",
-    "@infinumjs/stylelint-config": "^1.0.0",
-    "@wordpress/babel-plugin-makepot": "^2.0.3",
-    "autoprefixer": "^9.1.1",
-    "babel-core": "^6.26.0",
-    "babel-eslint": "^8.2.1",
-    "babel-loader": "^7.1.4",
-    "babel-plugin-syntax-async-functions": "^6.13.0",
-    "babel-plugin-transform-class-properties": "6.24.1",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-plugin-transform-react-jsx": "^6.24.1",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-env": "^1.6.0",
-    "bundle-loader": "^0.5.6",
-    "chalk": "^2.4.1",
-    "cross-env": "^5.0.1",
-    "cross-spawn": "^5.1.0",
-    "css-loader": "^1.0.0",
-    "cssnano": "^4.1.0",
-=======
     "@babel/core": "^7.0.0",
     "@wordpress/babel-preset-default": "^4.0.0",
     "@wordpress/blocks": "^6.1.0",
@@ -110,7 +37,6 @@
     "babel-eslint": "^8.2.1",
     "@infinumjs/eslint-config": "^1.1.0",
     "@infinumjs/stylelint-config": "^1.0.0",
->>>>>>> new
     "eslint": "^4.15.0",
     "eslint-config-wordpress": "^2.0.0",
     "eslint-plugin-import": "^2.10.0",
@@ -118,22 +44,6 @@
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.5.1",
     "eslint-plugin-wordpress": "^0.1.0",
-<<<<<<< HEAD
-    "extract-text-webpack-plugin": "^4.0.0-beta.0",
-    "gzip-size": "^4.1.0",
-    "inquirer": "^5.0.0",
-    "node-sass": "^4.7.2",
-    "optimize-css-assets-webpack-plugin": "^5.0.0",
-    "ora": "^1.3.0",
-    "postcss-loader": "^3.0.0",
-    "sass-loader": "^6.0.6",
-    "shelljs": "^0.8.0",
-    "stylelint": "^9.2.0",
-    "uglifyjs-webpack-plugin": "^1.3.0",
-    "update-notifier": "^2.3.0",
-    "webpack": "^4.5.0",
-    "webpack-cli": "^2.0.14"
-=======
     "stylelint": "^9.2.0"
   },
   "dependencies": {
@@ -159,6 +69,5 @@
         "astroturf/plugin"
       ]
     ]
->>>>>>> new
   }
 }

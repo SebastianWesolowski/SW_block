@@ -32,12 +32,6 @@
 			}
 		],
 		[
-			"@wordpress/babel-plugin-makepot",
-			{
-				"output": "languages/gutenberg-boilerplate.pot"
-			}
-		],
-		[
 			"transform-runtime",
 			{
 				"helpers": false,
