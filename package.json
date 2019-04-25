@@ -4,9 +4,9 @@
     "src/**/*.css": "dist/styles"
   },
   "scripts": {
-    "start": "parcel src/block.js  --no-source-maps --no-hmr --no-cache",
-    "watch": "parcel watch src/block.js --no-source-maps --hmr-hostname fleek.test --no-cache",
-    "build": "parcel build src/block.js --no-content-hash",
+    "start": "parcel src/blocks.js  --no-source-maps --no-hmr --no-cache",
+    "watch": "parcel watch src/blocks.js --no-source-maps --hmr-hostname fleek.test --no-cache",
+    "build": "parcel build src/blocks.js --no-content-hash",
     "__eslintPlugin": "eslint src/*",
     "__stylelintPlugin": "stylelint \"src/**/**/*.scss\" --syntax scss",
     "precommitCss": "npm run __stylelintPlugin",
