@@ -4,7 +4,8 @@
   "license": "MIT License",
   "description": "Gutenber block for bhp page",
   "homepage": "https://github.com/sebastianwesolowski/sw-block",
-  "authors": [{
+  "authors": [
+    {
       "name": "Sebastian Wesołowski",
       "email": "sebastian@wesolowski.dev",
       "homepage": "https://wesolowski.dev"
@@ -16,32 +17,40 @@
     }
   ],
   "keywords": [
-    "bhpwarszawa24", "bedrock", "composer", "roots", "wordpress", "wp", "wp-config", "plugin", "gutenberg"
+    "bhpwarszawa24",
+    "bedrock",
+    "composer",
+    "roots",
+    "wordpress",
+    "wp",
+    "wp-config",
+    "plugin",
+    "gutenberg"
   ],
   "support": {
     "issues": "https://github.com/sebastianwesolowski/sw-block/issues"
   },
-	"require-dev": {
+  "require-dev": {
     "squizlabs/php_codesniffer": "^3.0.2",
     "dealerdirect/phpcodesniffer-composer-installer": "^0.4.3",
     "infinum/coding-standards-wp": "^0.2.8",
     "phpcompatibility/phpcompatibility-wp": "^2.0",
     "phpcompatibility/php-compatibility": "^9.1"
   },
-	"scripts": {
-		"post-install-cmd": [
+  "scripts": {
+    "post-install-cmd": [
       "\"vendor/bin/phpcs\" --config-set installed_paths vendor/infinum/coding-standards-wp",
       "\"vendor/bin/phpcs\" -i"
-		],
-		"post-update-cmd": [
+    ],
+    "post-update-cmd": [
       "\"vendor/bin/phpcs\" --config-set installed_paths vendor/infinum/coding-standards-wp",
       "\"vendor/bin/phpcs\" -i"
     ]
-	},
-	"config": {
-		"sort-packages": true,
-		"optimize-autoloader": true
-	},
-	"minimum-stability": "dev",
-	"prefer-stable": true
+  },
+  "config": {
+    "sort-packages": true,
+    "optimize-autoloader": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }

@@ -10,4 +10,10 @@
  */
 
 import './blocks/tiny';
+import './blocks/about-site';
+import './blocks/faq';
+import './blocks/other-auctions';
+import './blocks/calculator-cards';
+import './blocks/bicycle-import';
+import './blocks/about-us';
 import './blocks/tiny-new';

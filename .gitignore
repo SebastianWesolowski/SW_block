@@ -20,3 +20,5 @@ package-lock.json
 /vendor/
 /logs/
 /reports/
+
+.vscode/settings.json

@@ -6,21 +6,21 @@ import { MarkdownIcon } from './icons';
 
 import pluginConsts from '../../plugin-consts';
 
-export const name = 'tinyblocks-new/markdown';
+export const name = 'tinyblocks/faq';
 
 export const settings = {
-	title: __( `${ pluginConsts.pluginName }` + 'wp-example-block', 'tiny-pixel-new' ),
-	description: __( 'Express yourself', 'tiny-pixel-new' ),
+	title: __( `${ pluginConsts.pluginName }` + 'faq', 'Artnova-Sebastian' ),
+	description: __( 'Express yourself', 'Artnova-Sebastian' ),
 	category: 'common',
 	keywords: [
-		__( 'markdown', 'tiny-pixel-new' ),
-		__( 'Tiny Pixel', 'tiny-pixel-new' ),
-		__( 'code', 'tiny-pixel-new' ),
+		__( 'faq', 'Artnova-Sebastian' ),
+		__( 'qurestion', 'Artnova-Sebastian' ),
+		__( 'autoautousa', 'Artnova-Sebastian' ),
 	],
 	icon: {
-		background: '#ddd',
+		background: '#dddddd',
 		color: '#fff',
-		src: <MarkdownIcon width={ 48 } height={ 48 } />,
+		src: <MarkdownIcon width={ 38 } height={ 30 } />,
 	},
 	edit: Edit,
 	save,
@@ -38,8 +38,6 @@ export const settings = {
 		},
 	},
 	supports: {
-		align: [
-			'full',
-		],
+		align: [ 'full' ],
 	},
 };
