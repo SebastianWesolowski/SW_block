@@ -1,18 +1,18 @@
 const { __ } = wp.i18n;
 
-import Edit from './edit';
-import { save } from './save';
-import { MarkdownIcon } from './icons';
+import Edit from './edit-bicycle-import';
+import { save } from './save-bicycle-import';
+import { MarkdownIcon } from './icons-bicycle-import';
 
-export const name = 'dawid/test-block';
+export const name = 'dawid/bicycle-import';
 
 export const settings = {
-	title: __( 'test-block', 'Dawid' ),
+	title: __( 'bicycle-import', 'Dawid' ),
 	description: __( 'Express yourself', 'Dawid' ),
 	category: 'artnova-blocks',
 	keywords: [
 		__( 'o nas', 'Dawid' ),
-		__( 'test-block', 'Dawid' ),
+		__( 'bicycle-import', 'Dawid' ),
 		__( 'autoautousa', 'Dawid' ),
 	],
 	icon: {

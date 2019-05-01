@@ -1,4 +1,4 @@
-import styled, { css } from 'astroturf';
+import { css } from 'astroturf';
 
 export const styles = css`
 .bicycle-import{

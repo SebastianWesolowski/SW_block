@@ -1,18 +1,18 @@
 const { __ } = wp.i18n;
 
-import Edit from './edit';
-import { save } from './save';
-import { MarkdownIcon } from './icons';
+import Edit from './edit-other-auctions';
+import { save } from './save-other-auctions';
+import { MarkdownIcon } from './icons-other-auctions';
 
-export const name = 'dawid/calculator-cards';
+export const name = 'dawid/other-auctions';
 
 export const settings = {
-	title: __( 'calculator-cards', 'Dawid' ),
+	title: __( 'other-auctions', 'Dawid' ),
 	description: __( 'Express yourself', 'Dawid' ),
 	category: 'artnova-blocks',
 	keywords: [
 		__( 'o nas', 'Dawid' ),
-		__( 'calculator-cards', 'Dawid' ),
+		__( 'other-auctions', 'Dawid' ),
 		__( 'autoautousa', 'Dawid' ),
 	],
 	icon: {

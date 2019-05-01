@@ -1,13 +1,20 @@
 
-import { styles } from './styled';
+import { styles } from './styled-other-auctions';
+
+import backgroundImageCopart from './assets/copart.png';
+import backgroundImageCraigslist from './assets/craigslist.png';
+import backgroundImageIaai from './assets/iaai.png';
+import backgroundImageFlag from './assets/flag.jpg';
+
+import blockGlobalConst from '../../global-block-consts';
 
 export const save = () => {
 	const backgroundImage = {
-		backgroundImage: `url( ${ 'http://autoautousa.dev.pl/wp-content/uploads/2019/04/inne-aukcje-flaga.jpg' } )`,
+		backgroundImage: 'url(' + blockGlobalConst.srcDist + backgroundImageFlag + ')',
 	};
-	const copart = 'http://autoautousa.dev.pl/wp-content/uploads/2019/04/copart.png';
-	const craigslist = 'http://autoautousa.dev.pl/wp-content/uploads/2019/04/craigslist.png';
-	const iaai = 'http://autoautousa.dev.pl/wp-content/uploads/2019/04/iaai.png';
+	const copart = blockGlobalConst.srcDist + backgroundImageCopart;
+	const craigslist = blockGlobalConst.srcDist + backgroundImageCraigslist;
+	const iaai = blockGlobalConst.srcDist + backgroundImageIaai;
 
 	return (
 		<div>

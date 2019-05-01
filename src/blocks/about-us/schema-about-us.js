@@ -1,18 +1,18 @@
 const { __ } = wp.i18n;
 
-import Edit from './edit';
-import { save } from './save';
-import { MarkdownIcon } from './icons';
+import { edit } from './edit-about-us';
+import { save } from './save-about-us';
+import { MarkdownIcon } from './icons-about-us';
 
-export const name = 'dawid/bicycle-import';
+export const name = 'dawid/about-us';
 
 export const settings = {
-	title: __( 'bicycle-import', 'Dawid' ),
+	title: __( 'about-us', 'Dawid' ),
 	description: __( 'Express yourself', 'Dawid' ),
 	category: 'artnova-blocks',
 	keywords: [
 		__( 'o nas', 'Dawid' ),
-		__( 'bicycle-import', 'Dawid' ),
+		__( 'about-us', 'Dawid' ),
 		__( 'autoautousa', 'Dawid' ),
 	],
 	icon: {
@@ -21,21 +21,14 @@ export const settings = {
 		src: <MarkdownIcon width={ 48 } height={ 48 } />,
 	},
 	attributes: {
-		markdownRendered: {
+		imageLink: {
 			type: 'string',
-			source: 'html',
-			selector: '.md__rendered',
-		},
-		markdownRaw: {
-			type: 'string',
-			source: 'text',
-			selector: '.md__raw',
-			default: '',
+			defaultImg: 'https://i.kym-cdn.com/entries/icons/original/000/000/091/TrollFace.jpg',
 		},
 	},
 	supports: {
 		align: [ 'full' ],
 	},
-	edit: Edit,
+	edit,
 	save,
 };
